@@ -46,14 +46,6 @@ window.addEventListener('click', function (event) {
     }
 });
 
-// Ziyaret sayacı
-fetch('https://api.countapi.xyz/hit/dogukanozturk.github.io/visits')
-  .then(response => response.json())
-  .then(data => {
-    document.getElementById('visitor-counter').innerText = data.value;
-  })
-  .catch(error => console.error('Ziyaret sayacı alınamadı:', error));
-
 
 ScrollReveal().reveal('.navbar, .aboutimg-box', { origin: 'left' });
 ScrollReveal().reveal('.details-box', { origin: 'right' });
